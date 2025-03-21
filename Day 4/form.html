@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <!-- http verbs => create, read, update, delete  -->
+
+    <!-- ctrl + d => select same code at a time  -->
+
+    <!-- ctrl + shif + l => select all same code  -->
+
+    <form action="#sdfsdfsd" method="POST">
+
+        <label for="name"> Name *</label>
+        <input type="text" id="name" name="name"> <br>
+
+        <label for="email"> Email *</label>
+        <input type="email" id="email" name="email"> <br>
+
+        <label for="password"> Password *</label>
+        <input type="password" id="password" name="password"> <br>
+
+        <label for="number"> Phone No. *</label>
+        <input type="number" id="number" name="number" min="1" max="5"> <br>
+
+        <label for="date"> Date *</label>
+        <input type="date" id="date" name="date"> <br>
+
+        <label for="time"> Time *</label>
+        <input type="time" id="time" name="time"> <br>
+
+        <label for="dateandtime"> Date & Time *</label>
+        <input type="datetime-local" id="dateandtime" name="dateandtime"> <br>
+
+        <label for="file"> file *</label>
+        <input type="file" id="file" name="file"> <br>
+
+        <label for="range"> Range *</label>
+        <input type="range" id="range" name="range"> <br>
+
+        <label for="range"> Course *</label>
+        <select name="" id="">
+            <option value="uiux">ui/ux</option>
+            <option value="python">python</option>
+            <option value="php">php</option>
+            <option value="graphic">graphic design</option>
+        </select>
+
+        <p>I want to join Mindrisers Internship program after my training is over</p>
+
+        <div>
+            <input type="radio" name="yes" id="yes">
+            <label for="yes"> Yes </label>
+        </div>
+
+        <div>
+            <input type="radio" name="no" id="no">
+            <label for="no"> NO </label>
+        </div>
+
+        <fieldset>
+            <legend>Course</legend>
+
+            <label for="python">Python</label>
+            <input type="checkbox" id="python" name="python"> <br>
+
+            <label for="django">Django</label>
+            <input type="checkbox" id="django" name="django"> <br>
+
+            <label for="php">PHP</label>
+            <input type="checkbox" id="php" name="php"> <br>
+        </fieldset>
+        
+        <label for="queries">Any Queries?</label>
+        <textarea name="question" id="queries" cols="40" rows="10"></textarea>
+
+        <input type="hidden" name="" value="sdfsdfsd%$%^%$$#6565">
+
+        <input type="image" src="../Day 1/image.jpg" height="50" width="50">
+
+        <br>
+        <button type="submit">Save</button>
+        <!-- <input type="submit" value="save"> -->
+    </form>
+
+</body>
+
+</html>
