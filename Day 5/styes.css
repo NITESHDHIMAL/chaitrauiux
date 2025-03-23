@@ -1,0 +1,50 @@
+* {
+    color: lightcoral;
+    margin: 0;
+}
+.container {
+    background-color: lightblue;
+}
+
+.container:hover {
+    background-color: aquamarine;
+    color: white;
+}
+
+p {
+    color: red;
+} 
+p:hover {
+    color: blueviolet;
+    font-size: 32px;
+}
+.advantage {
+    color: blue;
+}
+
+#idselctor {
+    color: yellow;
+}
+
+table, tr, th, td, h2 {
+    border: 2px solid;
+}
+
+
+/* img {
+    height: 100px;
+} */
+ /* .image1{
+    height: 100px;
+ } */
+
+ img[alt="image1"] {
+    height: 100px;
+ } 
+ img[alt="image2"] {
+    height: 200px;
+ } 
+
+
+
+
