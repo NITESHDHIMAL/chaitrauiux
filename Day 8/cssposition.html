@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .box {
+            border: 4px solid red;
+            display: flex;
+            width: 50vw;
+            height: 50vh;
+
+            position: relative;
+        }
+
+        .minibox {
+            border: 2px solid;
+            height: 150px;
+            width: 150px;
+            font-size: 2rem;
+            text-align: center;
+            align-content: center;
+        }
+
+        #static {
+            margin-top: 2rem;
+            background-color: green;
+            color: white;
+            position: static;
+        }
+
+        #relative {
+            background-color: lightcoral;
+            left: 2rem;
+            position: relative;
+        }
+
+        #absolute {
+            z-index: 2;
+            background-color: brown;
+            position: absolute;
+            /* can't take background space  */
+            right: 0;
+            bottom: 0;
+        }
+
+        #fixed {
+            height: 50px;
+            width: 50px; 
+            font-size: 2.5rem;
+            text-align: center;
+            align-content: center;
+            background-color: green;
+            border-radius: 50%;
+            color: white;
+
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+        } 
+        nav{
+            height: 65px;
+            align-content: center;
+            display: flex;
+            justify-content: center;
+            position: sticky; 
+            top: 0;
+            background-color: white;
+            z-index: 3; 
+        }
+        ul {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            width: 50%;
+            box-shadow: 1px 5px 12px 6px #e1dcdc;
+            padding-left: 0;
+            padding: 1rem 2rem; 
+            background-color: white;  
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+        <ul>
+            <li>static</li>
+            <li>relative</li>
+            <li>absolute</li>
+            <li>fixed</li>
+            <li>sticky</li>
+        </ul>
+    </nav>
+
+
+    <h1>CSS Position</h1>
+
+    <ol>
+        <li>static => default position, can't use top, bottom, left, right properties</li>
+        <li>relative => relative to it's normal position, can not affect other element </li>
+        <li>absolute => relative to nearest parent position </li>
+        <li>fixed => realtive to the viewport</li>
+        <li>sticky => when you scroll the page </li>
+    </ol>
+
+
+
+    <div class="box">
+        <div class="minibox" id="static">static</div>
+        <div class="minibox" id="relative">relative</div>
+        <div class="minibox" id="absolute">absolute</div> 
+        <div class="minibox" id="sticky">sticky</div>
+    </div>
+
+    <div id="fixed">
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
+
+
+
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad! Nobis, velit totam obcaecati itaque facere voluptate aut, laboriosam dolorem culpa harum, incidunt cumque nesciunt sint minus unde repudiandae dolores.</p>
+
+
+
+</body>
+
+</html>
