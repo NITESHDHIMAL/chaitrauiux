@@ -1,0 +1,28 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+ 
+
+* {
+    font-family: "Winky Sans", sans-serif;
+}
+
+body {
+    background-color: #f0d09a; 
+    color: #f0d09a; 
+}
+
+
+
+nav, ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 5px 0;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+    column-gap: 1rem;
+}
+
+
