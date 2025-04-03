@@ -1,28 +1,33 @@
- 
-@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
- 
-
-* {
-    font-family: "Winky Sans", sans-serif;
-}
-
-body {
-    background-color: #f0d09a; 
-    color: #f0d09a; 
-}
+ @import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 
 
+ @font-face {
+     font-family: 'MyCustomFont';
+     src: url('/fonts/MyCustomFont.woff2') format('woff2'),
+         url('./public/regards.otf') format('opentype'),
+         url('./public/regards.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
 
-nav, ul {
-    display: flex;
-    justify-content: space-around;
-    background-color: black;
-    padding: 5px 0;
-    align-items: center;
-}
-ul {
-    list-style-type: none;
-    column-gap: 1rem;
-}
+ body {
+     background-color: #f0d09a;
+     color: #f0d09a;
+     font-family: 'MyCustomFont', sans-serif;
+ }
 
 
+
+ nav,
+ ul {
+     display: flex;
+     justify-content: space-around;
+     background-color: black;
+     padding: 5px 0;
+     align-items: center;
+ }
+
+ ul {
+     list-style-type: none;
+     column-gap: 1rem;
+ }
