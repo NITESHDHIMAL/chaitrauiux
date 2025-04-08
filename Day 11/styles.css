@@ -1,5 +1,9 @@
  @import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 
+ * {
+    margin: 0;
+    padding: 0;
+ }
 
  @font-face {
      font-family: 'MyCustomFont';
@@ -12,11 +16,13 @@
 
  body {
      background-color: #f0d09a;
-     color: #f0d09a;
+     /* color: #f0d09a; */
      font-family: 'MyCustomFont', sans-serif;
  }
 
-
+ a {
+    color: #f0d09a;
+ }
 
  nav,
  ul {
@@ -25,9 +31,138 @@
      background-color: black;
      padding: 5px 0;
      align-items: center;
+     color: #f0d09a;
  }
 
  ul {
      list-style-type: none;
      column-gap: 1rem;
  }
+
+ .hero {
+     background-color: #FAEFDD;
+     text-align: center;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .hero h1 {
+     font-size: 4rem;
+ }
+
+ .orbit1 {
+     position: absolute;
+     left: -100px;
+     top: -100px;
+ }
+
+ .orbit2 {
+     position: absolute;
+     bottom: -100px;
+     right: -100px;
+ }
+
+ .orbit1 img {
+     animation: rotateorbit1 50s infinite linear;
+ }
+
+ @keyframes rotateorbit1 {
+     0% {
+         transform: rotate(0);
+     }
+
+     100% {
+         transform: rotate(360deg);
+     }
+ }
+
+ .orbit2 img {
+     animation: rotateorbit2 50s infinite linear;
+ }
+
+ @keyframes rotateorbit2 {
+     0% {
+         transform: rotate(360deg);
+     }
+
+     100% {
+         transform: rotate(0);
+     }
+ }
+
+ /* hero section ends  */
+ .feature_work {
+     background-image: url('https://owltastic.com/img/bg-star-chart-alt.webp');
+     padding: 4rem;
+     z-index: -1;
+     /* opacity: 8%; */
+     text-align: center;
+     color: #f0d09a;
+ } 
+ .feature_work p{
+    width: 50%;
+ }
+.work_description{
+    display: flex;
+    justify-content: center;
+}
+ .portfolio {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     justify-content: center;
+     gap: 1rem;
+ }
+
+ .work {
+     padding: 1rem;
+     background-color: black;
+ }
+
+ .miniwork {
+     border: 1px solid white;
+     height: 200px;
+     overflow: hidden;
+ }
+
+ .miniwork img {
+     width: 100%;
+     filter: grayscale();
+     transition: transform 10s ease;
+ }
+
+
+ .work:hover .miniwork img {
+     transform: translateY(-75%);
+     filter: grayscale(0%);
+ }
+/* feature work ends  */
+
+
+/* introduction starts  */
+
+.introduction {
+    background-color: #faefdd;
+    text-align: center;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url('https://owltastic.com/img/bg-owl-moon-flipped.webp');
+    background-size: 18%;
+    background-repeat: no-repeat;
+    background-position: right; 
+}
+.introduction h1 {
+    font-size: 4rem;
+    width: 80%;
+}
+.introduction p {
+    width: 50%;
+}
+
+
+/* introduction ends  */
+
+
+
